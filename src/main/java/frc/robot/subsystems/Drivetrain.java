@@ -34,7 +34,7 @@ public class Drivetrain extends SubsystemBase {
   private RelativeEncoder rightEncoder = frontRight.getEncoder();
   private RelativeEncoder leftEncoder = frontLeft.getEncoder();
 
-  private DifferentialDriveKinematics differentialDriveKinematics = new DifferentialDriveKinematics(1);
+  private DifferentialDriveKinematics differentialDriveKinematics = new DifferentialDriveKinematics(DrivetrainConstants.TrackWidth);
   
   /** Creates a new Drivetrain. */
   public Drivetrain() {
